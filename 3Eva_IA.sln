@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3Eva_IA", "3Eva_IA\3Eva_IA.csproj", "{77D037DE-3DA7-45A0-939B-DA5EA2D3B878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77D037DE-3DA7-45A0-939B-DA5EA2D3B878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D037DE-3DA7-45A0-939B-DA5EA2D3B878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D037DE-3DA7-45A0-939B-DA5EA2D3B878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D037DE-3DA7-45A0-939B-DA5EA2D3B878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EE408CA-394C-4E27-A8F2-841E46D3A974}
+	EndGlobalSection
+EndGlobal

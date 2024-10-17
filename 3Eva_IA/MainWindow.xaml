@@ -1,0 +1,58 @@
+﻿<Window x:Class="_3Eva_IA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3Eva_IA"
+        mc:Ignorable="d"
+        Background="Black"
+        Title="Lector de imágenes" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Foreground="White" Text="LECTOR DE IMÁGENES" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" 
+                   FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Name="btn_image" Source="Images/settings.png" Width="40" Height="40" Grid.Column="2" Grid.Row="0" MouseLeftButtonDown="btn_image_MouseLeftButtonDown"/>
+        <Border Grid.Column="0" Grid.Row="1" CornerRadius="10" Margin="20" Background="LightGray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <GroupBox Margin="10" BorderThickness="2">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="Subir imagen: " 
+                                   VerticalAlignment="Center" Margin="10,0,50,0"
+                                   FontSize="16"/>
+                        <Button Name="btn_subirImagen" Content="Subir imagen" Width="120" Height="40"
+                                Style="{StaticResource BtnStyle}" FontSize="16"  Click="btn_subirImagen_Click"/>
+                    </StackPanel>
+                </GroupBox>
+                <Image Grid.Row="1" x:Name="imageControl" HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" Margin="20"/>
+                <Image Name="btn_flecha" Source="Images/flecha-correcta.png" Width="30" Height="30" 
+                       Grid.Column="0" Grid.Row="1" MouseLeftButtonDown="btn_flecha_MouseLeftButtonDown"
+                       VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20"/>
+
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="1" CornerRadius="10" Margin="20" Background="LightGray" Grid.ColumnSpan="2">
+            <StackPanel Margin="30">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Tipo de voz: " FontSize="16" VerticalAlignment="Center"/>
+                    <ComboBox Name="cbx_voices" FontSize="16" Margin="20,0,0,0" Width="200"/>
+                </StackPanel>
+                <TextBlock x:Name="txt_title" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="txt_text" FontSize="14" TextWrapping="Wrap" Margin="0,20,0,0"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
