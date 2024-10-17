@@ -1,5 +1,6 @@
 # Lector de Imágenes con IA
 Este proyecto es una aplicación de escritorio desarrollada en C# utilizando WPF que permite a los usuarios cargar imágenes y obtener una descripción de las mismas utilizando servicios de IA de Azure.
+
 ![image](https://github.com/user-attachments/assets/0b1083a2-0360-404d-91b4-d7699533a8fb)
 
 ## Características
