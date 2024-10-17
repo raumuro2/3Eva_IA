@@ -38,3 +38,9 @@ Reemplace los valores de este archivo con sus propias claves y endpoints de Azur
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Ver [LICENCIA](LICENSE.txt) para detalles.
+
+## Contacto
+
+Raúl Muro Morcillo
+
+[Mi perfil de GitHub](https://github.com/raumuro2)
